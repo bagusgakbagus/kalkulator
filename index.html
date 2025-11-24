@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="proses.php">
+            <input type="number" name="value1" id="value1" required>
+
+            <div class="operator-row">
+                <select name="operator" id="operator">
+                    <option value="tambah">Tambah (+)</option>
+                    <option value="kurang">Kurang (-)</option>
+                    <option value="kali">Kali (*)</option>
+                    <option value="bagi">Bagi (/)</option>
+                    <option value="sin">Sin</option>
+                    <option value="cos">Cos</option>
+                    <option value="tan">Tan</option>
+                </select>
+            </div>
+
+            <input type="number" name="value2" id="value2" placeholder="kosong jika trigonometri">
+            <button type="submit" name="submit">BAGUS</button>
+
+           
+        </form>
+    </div>
+</body>
+</html>
